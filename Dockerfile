@@ -2,7 +2,7 @@ FROM python:3.8
 
 RUN  apt update && apt upgrade -yqq
 
-RUN apt install build-essential checkinstall zlib1g-dev make gcc -yqq
+RUN apt install build-essential ca-certificates checkinstall zlib1g-dev make gcc -yqq
 
 WORKDIR /usr/local/src/
 
